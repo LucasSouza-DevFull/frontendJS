@@ -11,6 +11,6 @@ botaoAdicionar.addEventListener("click", (evento) => {
 
     const itemDaLista = document.createElement("li");
     const containerItemDaLista = document.createElement("div");
-    containerItemDaLista.classList.add("lista-item-container");
+    containerItemDaLista.classList.add("lista-item-container"); // containerItemDaLista junto ao classlist.add para informar qual div estaria pegando a classe definida no html //
 
 })
