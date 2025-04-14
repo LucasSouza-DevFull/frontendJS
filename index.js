@@ -8,4 +8,9 @@ botaoAdicionar.addEventListener("click", (evento) => {
         alert("Por favor, insira um item");
         return
     }
+
+    const itemDaLista = document.createElement("li");
+    const containerItemDaLista = document.createElement("div");
+    containerItemDaLista.classList.add("lista-item-container");
+
 })
