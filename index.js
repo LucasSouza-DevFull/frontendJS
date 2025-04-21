@@ -1,5 +1,6 @@
 const inputItem = document.getElementById("input-item");
 const listaDeCompras = document.getElementById("lista-de-compras");
+const inputCampo = document.getElementById("input-item");
 
 const botaoAdicionar = document.getElementById("adicionar-item");
 let contador = 0;
@@ -25,6 +26,6 @@ botaoAdicionar.addEventListener("click", (evento) => {
 
     itemDaLista.appendChild(containerItemDaLista);
     listaDeCompras.appendChild(itemDaLista);
-  
+    inputCampo.value = "";
     
 })
