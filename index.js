@@ -23,9 +23,26 @@ botaoAdicionar.addEventListener("click", (evento) => {
 
     containerItemDaLista.appendChild(inputCheckBox);
     containerItemDaLista.appendChild(nomeItem);
+    
 
     itemDaLista.appendChild(containerItemDaLista);
+
+    const diaDaSemana = new Date().toLocaleDateString("pt-BR", {
+        weekday: "long",        
+    });
+    const data = new Date().toLocaleDateString("pt-BR");
+    const hora = new Date().toLocaleTimeString("pt-BR", {
+        timeStyle: "short",
+    });
+    const dataFormatada = `${diaDaSemana} (${data}) às ${hora}`;
+    const itemData = document.createElement("p");
+    itemData.classList.add("texto-data");
+    itemData.innerText = dataFormatada;
+    itemDaLista.appendChild(itemData);
+
     listaDeCompras.appendChild(itemDaLista);
+    
+
     inputCampo.value = "";
     
 })
