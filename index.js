@@ -49,10 +49,21 @@ botaoAdicionar.addEventListener("click", (evento) => {
     itemDaLista.appendChild(itemData);
 
     listaDeCompras.appendChild(itemDaLista);
-    
+     verificarListaVazia();
 
     inputCampo.value = "";
     
 })
 
 const mensagemListaVazia = document.querySelector(".mensagem-lista-vazia");
+
+function verificarListaVazia () {
+    const itensDaLista = listaDeCompras.querySelectorAll("li");
+    if (itensDaLista.length === 0){
+        mensagemListaVazia.style.display = "block"
+    } else {
+        mensagemListaVazia.style.display = "none"
+    }
+}
+
+verificarListaVazia();
