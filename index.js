@@ -54,3 +54,5 @@ botaoAdicionar.addEventListener("click", (evento) => {
     inputCampo.value = "";
     
 })
+
+const mensagemListaVazia = document.querySelector(".mensagem-lista-vazia");
