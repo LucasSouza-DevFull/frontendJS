@@ -1,5 +1,6 @@
 const inputItem = document.getElementById("input-item");
-function criarItemDaLista(){
+
+export function criarItemDaLista(){
 evento.preventDefault();
     if(inputItem.value ==="") {
         alert("Por favor, insira um item");

@@ -1,3 +1,4 @@
+import { criarItemDaLista } from "./scripts/criarItemDaLista";
 const listaDeCompras = document.getElementById("lista-de-compras");
 const inputCampo = document.getElementById("input-item");
 
